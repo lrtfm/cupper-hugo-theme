@@ -10,13 +10,12 @@
     <div class="date">
       {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
       {{ $publishDate := .PublishDate }}
-      <strong aria-hidden="true">Publish date: </strong>{{ $publishDate.Format $dateFormat }}
       {{ with .Lastmod }}
         {{ if gt . $publishDate }}
-          <br>
-          <strong aria-hidden="true">Last updated: </strong>{{ .Format $dateFormat }}
+          <strong aria-hidden="true">Last updated: </strong>{{ .Format $dateFormat }} |
         {{ end }}
       {{ end }}
+      <strong aria-hidden="true">Publish date: </strong>{{ $publishDate.Format $dateFormat }}
     </div>
 
     {{ with .Params.tags }}

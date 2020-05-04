@@ -254,9 +254,9 @@ label {
   font-weight: bold;
 }
 [for="themer"] {
-  background: #111;
+  /* background: #111; */
   border-radius: 0.33em;
-  color: #fefefe;
+  /* color: #fefefe; */
   padding: 0.25em 0.75em;
   margin: 0.5rem;
 }
@@ -459,6 +459,8 @@ caption {
 #disqus-button {
   width: 100%;
   padding: 0.25em 0.75em;
+  background: inherit;
+  color: inherit;
 }
 #disqus-comments {
   display: none; 
@@ -488,6 +490,7 @@ caption {
 .tags {
     margin-top: 0;
     font-size: 0.85rem;
+    color: gray;
 }
 .tags * {
     display: inline;
@@ -505,6 +508,7 @@ caption {
 .date {
     margin-top: 0;
     font-size: 0.85rem;
+    color: gray;
 }
 
 /* Notes and warnings */
