@@ -83,9 +83,21 @@ a {
     margin-top: 0;
     background-color: transparent;
 }
+
+/* MathJax */
 .MJX-TEX * {
     margin-top: 0;
     background-color: transparent;
+}
+/* Fix page blank when right click the formual */
+.CtxtMenu_MenuFrame,
+#MathJax_MenuFrame {
+    background-color: transparent;
+}
+/* Fix the margin of the MathJax menu */
+.CtxtMenu_MenuItem,
+.MathJax_MenuItem {
+    margin-top: 0;
 }
 
 /* Fix for IE :( */
@@ -357,7 +369,7 @@ caption {
     margin-left: 15rem;
 }
 .main-and-footer > div {
-    max-width: 40rem;
+    max-width: 50rem;
     margin: 0 auto;
     padding: 2.25rem;
 }
@@ -461,11 +473,13 @@ caption {
     font-size: 1.25rem;
     line-height: 1.6;
 }
+/*
 .patterns-list li + li {
     margin-top: 1rem;
     padding-top: 1rem;
     border-top: 2px solid;
 }
+*/
 .patterns-list a {
     border: 0;
 }
@@ -562,7 +576,7 @@ figcaption::before {
 /* Code blocks */
 pre[class*=language-] {
     background: none;
-    margin-top: 2.25rem;
+    margin-top: 1.25rem;
     margin-bottom: 0;
     overflow-y: hidden;
     overflow-x: auto;
