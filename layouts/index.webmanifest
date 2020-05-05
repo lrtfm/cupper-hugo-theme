@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "{{site.Title}}",
+    "short_name": "{{site.Title}}",
     "icons": [
         {
             "src": "{{ "android-chrome-192x192.png" | relURL }}",
@@ -15,5 +15,6 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "start_url": "{{ "/" | relLangURL }}?utm_source=web_app_manifest"
 }
