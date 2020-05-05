@@ -73,3 +73,23 @@ markup:
   tableOfContents:
     endLevel: 6
     startLevel: 2
+
+mediaTypes:
+  application/manifest+json:
+    suffixes:
+    - webmanifest
+
+outputFormats:
+  WebAppManifest:
+    baseName: site
+    mediaType: application/manifest+json
+    rel: manifest
+
+outputs:
+  home:
+  - HTML
+  - RSS
+  - WebAppManifest
+  section:
+  - HTML
+  - RSS
