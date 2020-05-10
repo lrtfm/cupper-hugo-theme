@@ -24,6 +24,16 @@ params:
   dateFormat: Jan 2, 2006
   codePenUser: someUser
   math: katex
+  social: 
+    - name: gitlab
+      icon: "fab fa-gitlab"
+      url: https://gitlab.com
+    - name: github
+      icon: "fab fa-github"
+      url: https://github.com
+    - name: RSS
+      icon: "fas fa-rss"
+      url: /index.xml
 
 menu:
   nav:
@@ -39,9 +49,6 @@ menu:
     - name: About
       url: /about/
       weight: 4
-    - name: RSS
-      url: /index.xml
-      weight: 5
 
 markup:
   defaultMarkdownHandler: goldmark
