@@ -25,6 +25,7 @@
   {{ $templateStyles := resources.Get "css/template-styles.css" }}
   {{ $styles := $templateStyles | resources.ExecuteAsTemplate "css/styles.css" . }}
   <link rel="stylesheet" type="text/css" href="{{ $styles.Permalink }}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{{ "css/all.css" | relURL }}" />
 
   <style id="inverter" media="none">
     .intro-and-nav, .main-and-footer { filter: invert(100%) }

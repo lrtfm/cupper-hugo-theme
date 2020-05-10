@@ -10,6 +10,15 @@
         {{ end }}
       </p>
     </div>
+    <div id=social>
+      <nav>
+        <ul>
+          {{- range $index, $key := .Site.Params.Social -}}
+          <li><a href="{{ $key.url }}"><i title="{{ $key.name }}" class="icons {{ $key.icon }}"></i></a></li>
+          {{- end -}}
+        </ul>
+      </nav>
+    </div>
     {{ partial "nav.html" . }}
   </div>
 </header>

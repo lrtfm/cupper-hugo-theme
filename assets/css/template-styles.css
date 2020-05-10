@@ -78,6 +78,35 @@ a {
   outline-offset: 2px;
 }
 
+div#social {
+    margin-top: 1.25rem;
+}
+#social nav {
+    justify-content: center;
+}
+
+#social nav li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px 0 0;
+    padding: 2px;
+}
+
+#social li:last-child {
+    margin: 0;
+}
+.icons {
+    color: #333;
+    font-size: 1.4rem;
+  }
+  
+.icons:hover {
+    color: #808080;
+}
+  
+.icons {
+    font-size: 1.8rem;
+}
 /* Katex math typesetting */
 .katex * {
     margin-top: 0;
@@ -930,6 +959,10 @@ h1 svg {
     }
     .intro-and-nav > div {
         padding: 1.5rem;
+    }
+    div#social {
+        margin:0 auto;
+        margin-top: 1.25rem;
     }
     .main-and-footer {
         margin: 0;
