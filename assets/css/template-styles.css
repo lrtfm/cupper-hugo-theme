@@ -132,6 +132,7 @@ div#social {
 mjx-container[jax="CHTML"][display="true"] {
     overflow-x: auto;
     overflow-y: hidden;
+    outline: none;
 }
 
 /* Fix for IE :( */
