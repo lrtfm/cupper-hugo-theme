@@ -132,7 +132,10 @@ div#social {
 mjx-container[jax="CHTML"][display="true"] {
     overflow-x: auto;
     overflow-y: hidden;
-    outline: none;
+    padding: 0.4rem;
+}
+mjx-container[jax="CHTML"]:focus {
+    outline: 1px solid black;
 }
 
 /* Fix for IE :( */
