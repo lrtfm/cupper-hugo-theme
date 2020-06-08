@@ -1,8 +1,4 @@
 <!--mermaid.html-->
-<div class="mermaid" align="{{ if .Get "align" }}
-                                {{ .Get "align" }}
-                            {{ else }} 
-                                center
-                            {{ end }}"> 
+<div class="mermaid" align="{{ if .Get "align" }} {{ .Get "align" }} {{ else }} center {{ end }}" style="overflow: auto"> 
     {{ safeHTML .Inner }}
 </div>
