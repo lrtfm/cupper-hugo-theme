@@ -202,8 +202,9 @@ kbd {
 pre,
 .file-tree {
     overflow-x: auto;
-    padding: 1.5rem;
+    padding: 1rem;
     border: 1px solid;
+    border-radius: 1rem;
 }
 code {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -622,6 +623,7 @@ pre[class*=language-] {
     margin-bottom: 0;
     overflow-y: hidden;
     overflow-x: auto;
+    border-radius: 0.5rem;
 }
 code[class*="language-"], pre[class*="language-"] {
   text-shadow: none;
@@ -647,8 +649,8 @@ pre[class*=language-] code * {
 }
 .highlight {
     background: #ddd;
-    padding: 0.0625rem 0.33rem;
-    border-radius: 0.5rem;
+    /* padding: 0.0625rem 0.33rem; */
+    border-radius: 1rem;
 }
 .numbered .highlight::after,
 .code-annotated.numbered + ol li::before  {
