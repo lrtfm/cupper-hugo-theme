@@ -4,7 +4,7 @@
       <a class="logo" href="{{ "" | absURL }}" aria-label="{{ .Site.Title }} home page">
         <img src="{{ "images/logo.svg" | absURL }}" alt="">
       </a>
-      <p class="library-desc">
+      <p class="library-desc" style="text-align: center;">
         {{ with .Site.Params.description }}
           {{ . | markdownify }}
         {{ end }}
@@ -12,9 +12,9 @@
     </div>
     <div id=social>
       <nav>
-        <ul>
+        <ul style="text-align: center;">
           {{- range $index, $key := .Site.Params.Social -}}
-          <li><a href="{{ $key.url }}"><i title="{{ $key.name }}" class="icons {{ $key.icon }}"></i></a></li>
+          <li style="display:inline-block;"><a href="{{ $key.url }}"><i title="{{ $key.name }}" class="icons {{ $key.icon }}"></i></a></li>
           {{- end -}}
         </ul>
       </nav>
