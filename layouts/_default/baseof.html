@@ -8,14 +8,14 @@
       {{ partial "header.html" . }}
       <div class="main-and-footer">
         <div>
-          {{ block "main" . }}{{ end }}
-          {{ partial "footer.html" . }}
+          {{- block "main" . }}{{ end }}
+          {{- partial "footer.html" . }}
         </div>
       </div>
     </div>
-    {{ partial "script.html" . }}
-    {{ partial "math.html" . }}
-    {{ partial "mermaid.html" . }}
-    {{ partial "google-analytics-async.html" . }}
+    {{- partial "script.html" . }}
+    {{- partial "math.html" . }}
+    {{- partial "mermaid.html" . }}
+    {{- partial "google-analytics-async.html" . }}
   </body>
 </html>

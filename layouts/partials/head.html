@@ -3,10 +3,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  {{ hugo.Generator }}
+  {{- hugo.Generator }}
   <link rel="canonical" href="{{ .Permalink }}">
 
-  {{ if .IsHome }}
+  {{- if .IsHome }}
     {{ with .Site.Params.homeMetaContent }}
       <meta name="description" content="{{ . | plainify }}">
     {{ end }}
@@ -20,9 +20,9 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-  {{ if ne .File.Extension  "org" }}
+  {{- if ne .File.Extension  "org" -}}
     <link rel="stylesheet" href="{{ "css/prism.css" | relURL }}" media="none" onload="this.media='all';">
-  {{ end }}
+  {{- end -}}
 
   {{ $templateStyles := resources.Get "css/template-styles.css" }}
   {{ $styles := $templateStyles | resources.ExecuteAsTemplate "css/styles.css" . }}
@@ -35,7 +35,7 @@
     img:not([src*=".svg"]), .colors, iframe, .demo-container { filter: invert(100%) }
   </style>
 
-  {{ $title := print .Title " | " .Site.Title }}
+  {{- $title := print .Title " | " .Site.Title -}}
   {{ if .IsHome }}
     {{ $title = .Site.Title }}
   {{ end }}

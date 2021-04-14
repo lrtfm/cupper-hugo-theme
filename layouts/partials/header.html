@@ -5,9 +5,9 @@
         <img src="{{ "images/logo.svg" | absURL }}" alt="">
       </a>
       <p class="library-desc" style="text-align: center;">
-        {{ with .Site.Params.description }}
+        {{- with .Site.Params.description -}}
           {{ . | markdownify }}
-        {{ end }}
+        {{- end -}}
       </p>
     </div>
     <div id=social>
