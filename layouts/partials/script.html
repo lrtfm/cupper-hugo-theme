@@ -1,4 +1,6 @@
-{{ if ne .File.Extension  "org" -}}
+{{ with .File -}}
+{{ if ne .Extension  "org" -}}
 <script src="{{ "js/prism.js" | absURL }}"></script>
 <script src="{{ "js/dom-scripts.js" | absURL }}"></script>
+{{- end }}
 {{- end }}

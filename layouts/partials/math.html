@@ -5,8 +5,10 @@
 {{ else if eq $.Site.Params.math "mathjax" }}
 <script>
       window.MathJax = {
+        // loader: {load: ['[tex]/boldsymbol', '[tex]/ams']},
         tex: { 
             tags: 'ams', /* Enable automatic numbering */
+            // packages: {'[+]': ['boldsymbol', 'ams']},
             inlineMath: [['$', '$'], ['\\(', '\\)']],
             macros: {
                 bm: ["{\\boldsymbol{#1}}",1],
